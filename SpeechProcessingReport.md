@@ -14,7 +14,7 @@ Indian constitution recognizes 22 official languages:
 6. Malayalam 
 7. Marathi 
 8. Urdu 
-9. Gujarati 
+9.  Gujarati 
 10. Konkani 
 11. Punjabi 
 12. Odia 
