@@ -987,9 +987,14 @@ It might me sampling uncertainty (uncertainty in selecting among possible tokens
 
 Method Example:
 Original Qualification: "Is the car under the cat?"
-* Equivalent -> "Is the cat on top of the car?" (should give same response) 
-* Complementary -> "Is the car on top of the cat" (should give opposite response)
+* Equivalent Questions -> "Is the cat on top of the car?" (should give same response) 
+* Complementary Questions -> "Is the car on top of the cat" (should give opposite response)
 
+The above example is based on the question which has binary answer. 
+However, a question with open-ended answers can also be used, without any options:
+  * e.g. "What is the capital of the US"
+  * Answers can be varied
+  * NOTE: Complementary questions cannot be made at all times, like for this question.("We can't do, "What is the capital of France" as it doesn't really make sense for evaluation. The Complementary question will end up becoming open-ended)
 
 FESTA Score = FEC + FCC
 
