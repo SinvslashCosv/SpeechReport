@@ -200,7 +200,7 @@ Tamil-Brahmi → Tamil
 Telugu, Kannada, Malayalam
 Grantha: Used for writing classical Sanskrit texts in South India.
 
-5. **Modern Indic Scripts (~4th Century CE – Present)**
+**Modern Indic Scripts (~4th Century CE – Present)**
 * Developed from regional variations of Brahmi.
 * Adapted based on languages and regions.
 
@@ -678,14 +678,16 @@ Study of how words are built(internal structure and formation of words)
    * Speaker reads a prepared text
    * Characteristics: complete sentences, planned speech, careful pronunciation, fewer mistakes, consistent pacing
    * WER is lower
-  2. **Conversational Speech**
-   * Natural interaction between people
-   * Characteristics: informal-language, turn-taking, interruptions, fillers, code-switching
-   * WER is Medium
-  3. **Spontaneous Speech**
+  2. **Spontaneous Speech**
    * Speech created without planning
    * Characteristics: Hesitations,self-corrections, false starts, incomplete sentences, repetitions
    * WER is the highest
+  
+  3. **Conversational Speech(Subset of Spontaneous Speech)**
+   * Natural interaction between people
+   * Characteristics: informal-language, turn-taking, interruptions, fillers, code-switching
+   * WER is Medium
+  
 3. **Music**
 * Audio produced by intentionally using instruments, human voice, and electronic synthesis
  
