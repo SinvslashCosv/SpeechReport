@@ -165,39 +165,50 @@ Transfer of knowledge can occur more easily between languages of the same langua
 * E.g., You say Namaste in Urdu (Namaste is also used in Hindi), so if not specified, might give namaste in Hindi script instead of Urdu script. 
    * Same spoken word, different script outputs 
 
+  
 ## History of Scripts
 ### Indian
-1. Indus Script (~3300–1900 BCE)
-* Earliest known writing system in the Indian subcontinent which emerged during the Indus Valley Civilization.
-* e.g. Symbols  on seals, pottery, and other artifacts.
-* logo-syllabic script (combining symbols to make words and sounds.)
-* After disappearance of Indus script, Vedas used to be transmitted orally
-
-2. Kharosthi Script (~5th Century BCE – 3rd Century CE)
+1. **Indus Script (~3300–1900 BCE)**
+* Earliest known writing system in the Indian subcontinent from the Indus Valley Civilization.
+* Found on seals, pottery, and tablets.
+* Logo-syllabic script (symbols representing sounds/words), Remains undeciphered.
+* After its decline, the Vedas were preserved through oral tradition before being written down.
+  
+2. **Kharosthi Script (~5th Century BCE – 3rd Century CE)**
 ![alt text](image-4.png)
 
-* Appeared in northwestern India(current-day Pakistan)
-* Influenced by writing systems of Achaemenid Empire(First Persian Empire, but later fell to Alexander the Great)
-* Written from right to left (atypical)
-* Used mainly for administrative records and Buddhist texts
-
-3. Brahmi Script (~3rd Century BCE – 6th Century CE)
+* Developed in northwestern India (modern Pakistan/Afghanistan).
+* Influenced by Aramaic script.
+* Written right to left.
+* Used mainly for administrative records and Buddhist texts.
+  
+3. **Brahmi Script (~3rd Century BCE – 6th Century CE)**
 ![alt text](image-5.png)
-* Most influential script in Indian history
-* Became widespread during Mauryan Empire and popularized in Ashokan inscriptions. 
-* Written left to right (unlike Kharosthi)
-* Later evolved
-  * Evolution of Brahmi Script:
-    * Northern-Brahmi
-      * Gupta
-      * Nagari
-      * Devanagari
-    * Souther-Brahmi
-      * Tamil-Brahmi
-        * Telugu
-        * Tamil
-        * Kannada
-        * Malayalam
+
+* Most influential Indian script and ancestor of most modern Indic scripts.
+* Popularized through Ashokan inscriptions.
+* Written left to right.
+* Abugida: consonants have inherent vowels.
+
+4. **Evolution Process (3. -> 4.):**
+
+Northern Brahmi
+Gupta → Nagari → Devanagari
+Bengali, Gujarati, Odia, Sharada
+Southern Brahmi
+Tamil-Brahmi → Tamil
+Telugu, Kannada, Malayalam
+Grantha: Used for writing classical Sanskrit texts in South India.
+
+5. **Modern Indic Scripts (~4th Century CE – Present)**
+* Developed from regional variations of Brahmi.
+* Adapted based on languages and regions.
+
+* Major scripts:
+North India: Devanagari, Bengali, Gujarati, Odia
+South India: Tamil, Telugu, Kannada, Malayalam
+
+**Overall: Indus → Brahmi/Kharosthi → Modern Indic Scripts**
 
 ## Language Typology
 Asks "How are languages built?" </br>
