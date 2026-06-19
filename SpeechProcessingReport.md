@@ -459,9 +459,9 @@ NOTE: Unicode is a universal system that gives every character in every writing 
   
 |unsanitized verbatim|unsanitized normal|Scenario| District|State|Area|Age| Gender| Qualification| Occupation| Analysis|
 |----|----|----|----|----|----|----|----|----|----|----|
-|```<Persistent-noise-start> इस्थानीय कला <breathing> रूप या सिल्प <breathing> होसंगाबाद जिले के लिए एक <Persistent-noise-end>```|```<Persistent-noise-start> स्थानीय कला <breathing> रूप या शिल्प <breathing> होसंगाबाद जिले के लिए एक (<Persistent-noise-end>```|Extempore(impromptu)|Hoshangabad| Madhya Pradesh|Rural|30-45|Male|Post-Grad + phD|Fermar(farmer)| **1.** **इस्थानीय** (verbatim) vs **स्थानीय** (normalized) <br>Adding a vowel sound before the word is common in hindi belt, specifically rural areas. <br> **2.** Background noise can indicate construction/working conditions(blue collar job) indication <br> **3.** Not shuddh or clean hindi originally, indicating lower education level(contrary to Post-Grad + phD qualification shown in the dataset) and occupation(blue collar job)<br> **4.** **सिल्प** (verbatim) vs **शिल्प** (normalized) 'Sh' sound/pronunciation is originally missed out.
+|```<Persistent-noise-start> इस्थानीय कला <breathing> रूप या सिल्प <breathing> होसंगाबाद जिले के लिए एक <Persistent-noise-end>```|```<Persistent-noise-start> स्थानीय कला <breathing> रूप या शिल्प <breathing> होसंगाबाद जिले के लिए एक (<Persistent-noise-end>```|Extempore(impromptu)|Hoshangabad| Madhya Pradesh|Rural|30-45|Male|Post-Grad + phD|Fermar(farmer)| **1.** **इस्थानीय** (verbatim) vs **स्थानीय** (normalized) <br>Adding a vowel sound before the word is common in hindi belt, specifically rural areas. <br> **2.** Not shuddh or clean hindi originally, indicating lower education level(contrary to Post-Grad + phD qualification shown in the dataset) and occupation(blue collar job)<br> **3.** **सिल्प** (verbatim) vs **शिल्प** (normalized) 'Sh' sound/pronunciation is originally missed out.
 |```<Persistent-noise-start> अनोखे हैं <inhaling> ये कला के रूप में <Persistent-noise-end>,```| ```<Persistent-noise-start> अनोखे हैं <inhaling> ये कला के रूप में <Persistent-noise-end>```|Extempore| Hoshangabad|Madhyapradesh|Rural|30-45|Male|Post-Grad + phD| Fermar(farmer)|Both contain the same spoken words, but verbatim (original) consists of a **','** towards the end unlike in normalized version. Similar reasoning as first example
-|लोग जाते हैं देखते हैं अच्छा है|लोग जाते हैं देखते हैं अच्छा है| Extempore|Jaunpur|Uttar Pradesh|Rural| 18-30| Male| Undergrad and Grad.| Student| No difference between verbatim and normalized. Less accented and cleaner hindi or background noise, indicating literacy and non-blue collar working conditions |
+|लोग जाते हैं देखते हैं अच्छा है|लोग जाते हैं देखते हैं अच्छा है| Extempore|Jaunpur|Uttar Pradesh|Rural| 18-30| Male| Undergrad and Grad.| Student| No difference between verbatim and normalized. Less accented and cleaner hindi, indicating literacy|
 वहाँ पे हर चीजें मिलती हैं|वहाँ पर हर चीज मिलती हैं| Extempore|Jaunpur| Uttar Pradesh| Rural| 18-30| Male| Undergrad and Grad.| Student| **1.** **वहाँ पे** (verbatim) vs **वहाँ पर** (normalized) <br> Colloquial language converted to standard form. <br> **2.** **चीजें** (verbatim) vs **चीज** (normalized) <br> Speaker used a plural form which is converted to singular form to match the grammatical structure<br> Other similar obervations as above observation for student
 | ```हाँ एक्चुअली सर <uhh> आपके बच्चे ने एक होमबर्क करके नहीं आया था और वो मैथ में थोड़ा सा वीक है```| ```हाँ एक्चुअली [actually] सर [sir] <uhh> आपके बच्चे ने एक होमबर्क [homework] करके नहीं आया था और वह मैथ [math] में थोड़ा सा वीक [weak] है```| Conversation| Betul| Madhya Pradesh| Urban|30-45|Male| Post Grad + phD| Indian Army| **1.** **actually, homework, math, weak** English words are tagged, indicating code-switching. Individual is probably well educated. **2.** **वो मैथ में थोड़ा सा वीक है** (verbatim) vs **वह मैथ [math] में थोड़ा सा वीक [weak] है** Pronoun normalization to satisfy standard conventions.<br> **3.** **[uhh]** is preserved, indicating a disfluency/filler and possibly a conversational setting.
 
@@ -778,18 +778,20 @@ However, a dataset specific for ASR(Speech-->Text) will have a lot of speakers, 
 * ASR requires less hours of data compared to TTS which requires more hours of data (to capture clean sound)
 
 ## Open Source Models Speech & Language Models
-|Type|General Models| Indic Models|
-|----|----|----|
-|ASR|Whisper, wav2vec 2.0, HuBERT, WavLM, Conformer, QuartzNet, Citrinet, Vosk, DeepSpeech|IndicWhisper, IndicConformer, IndicWav2Vec, Vakyansh ASR, Bhashini ASR|
-|TTS|Tacotron 2, Parrot TTS, FastSpeech/FastSpeech 2, Glow-TTS, VITS, YourTTS, XTTS, Bark, SpeechT5|IndicTTS, Vakyansh TTS, Bhashini TTS, AI4Bharat TTS models|
-|Machine Translation (MT)|NLLB, M2M-100, mBART, MarianMT, T5/mT5|IndicTrans, IndicTrans2, Bhashini MT|
+
+| Type    | General Models                                                                                        | Indic Models                                                                    |
+| ------- | ----------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- |
+| **ASR** | **Whisper Large-v3**, **SeamlessM4T-v2**, **WavLM**, **w2v-BERT 2.0**, **OWSM**, **NVIDIA Canary** Conformer, Zipformer | **IndicWhisper**, **IndicConformer**, IndicWav2Vec2, Vakyansh ASR, Bhashini ASR |
+| **TTS** | **XTTS-v2**, **F5-TTS**, **VoiceCraft**, **StyleTTS 2**, **Parler-TTS**, SpeechT5                     | **AI4Bharat IndicTTS**, Indic-TTS, Vakyansh TTS, Bhashini TTS                   |
+| **MT**  | **SeamlessM4T-v2**, **MADLAD-400**, **NLLB-200**, mBART50, M2M-100, mT5                               | **IndicTrans2**, IndicTrans2-M2M, Bhashini MT                                   |
+
 
 **NOTE**: Not all Bhashini models are Open Source Models.
 ## Evaluation Metrics
 ### ASR
 1. **WER(Word Error Rate)**
   * Mostly used for speech recognition(ASR) to measure transcription errors
-  * WER = (S + D + I)/N
+  * WER = (S + D + I)/ N
     * S-substitution, D-deletion, I- insertions, N-total number of words
       * e.g. Speech: " I love apples", Transcribed text: "I love apple".
         * This is a substitution, but still low WER -> better speech recognition
@@ -906,7 +908,98 @@ e.g. "Elon Musk founded SpaceX"
    * Prosody is a huge part of Paralinguistics, but the latter is broader
    * e.g. non-lexical sounds(crying, sighs, pauses), speech style(hesitation, emphasis) don't come under prosody
 
+## Uncertainty in LLMs (Notes from Dr. Sriram Ganapathy, IISc Lecture)
+### Trust
+Trust on LLMs or AI in general can typically mean things like factual correctness, reproducibility, and robustness under different conditions.
+
+To evaluate whether an AI system can be trusted, it is important to first understand what trust means in the context of AI systems.
+
+**Need for Trust Assessment**
+* Modality Influence: Understanding how different input types (text, image, audio) affect model decisions
+* Hallucination Risk: Identifying when models generate unsupported or incorrect outputs
+* Sensitivity to Input Domain Shift: Understanding how changes in data distribution or real-world conditions affect model performance and reliability
+
+### Uncertainty & Confidence 
+**Uncertainty** is the degree of doubt or lack of knowledge a model has about its output being correct
+
+**Confidence** refers to how confidently a model favours a particular output or prediction
+
+**Ideally:**
+* Correction prediction -> High confidence -> Low uncertainty
+* Wrong/unknown case -> Low confidence -> High uncertainty\
+
+**Confidence and uncertainty should be inversely proportional**
+
+BUT in the models we have right now, just because it is correct doesn't mean it is confident and vice-versa. Same applies in the context of uncertainty.
+
+Uncertainty has two parts:
+* **Aleatoric uncertainty (irreducible) + Epistemic uncertainty (reducible with data) = Total model uncertainty**
+* Aleatoric Uncertainty
+  * Uncertainty as the world/data itself is noisy
+  * Even with inlimited training data, you cannot completely remove it (irreducible)
+* Epistemic Uncertainty
+  * Uncertainty as the model doesn't have enough knowledge
+  * Comes from lack of training data or model understanding
+  * Can be reduced by: collecting more data, improving the model, better training (reducible)
+
+### Temperature
+Temperature is a parameter that controls how much the LLM's token probabilities are "flattened" or "sharpened" before choosing the next token.
+
+To explain:
+1. **LLM first produces logits**
+* Before producing the next word/token, the model produces logits
   
+**Question: "What is the capital of France?"**
+
+ |Token|Logit|
+ |----|----|
+ |Paris|10|
+ |Lyon| 5|
+ |Rome|2|
+ * Logits are **raw** scores given to tokens before choosing. 
+ * Higher logit = Model prefers that token
+
+2. Softmax equation converts logits --> probabilities
+
+ |Token|Probability|
+ |----|----|
+ |Paris|99%|
+ |Lyon|0.9%|
+ |Rome|0.1%|
+
+So, the model is very deterministic. 
+
+However:
+* High temperature (T > 1) -> Scaling logits out(flattened)-> lower softmax produced probabilities -> less deterministic, more diverse
+* Low temperature (T < 1)-> Scaling logits up (sharpened) -> higher softmax produced probabilities -> more deterministic
+
+**NOTE:**
+* flattened: less difference/gap between high and low probability tokens (compared to earlier)
+* sharp: more difference/gap between high and low probability tokens (compared to earlier)
+
+High temperature, leading to diversity, doesn't necessarily mean high uncertainty.
+It might me sampling uncertainty (uncertainty in selecting among possible tokens from the model’s output distribution) **BUT NOT** epistemic uncertainty (due to lack of knowledge)
+
+
+### Mentioned Methods: Sampling inputs instead of output for confidence matrix
+
+**Confidence Matrix** is a that shows how confident a model is about its predictions across different classes, inputs, or situations.
+
+Method Example:
+Original Qualification: "Is the car under the cat?"
+* Equivalent -> "Is the cat on top of the car?" (should give same response) 
+* Complementary -> "Is the car on top of the cat" (should give opposite response)
+
+
+FESTA Score = FEC + FCC
+
+**NOTE:**
+* Clustered -> Less Semantic Entropy -> Model has a clear representation
+* Spread Out -> High Semantic Entropy -> Representation is uncertain
+
+* FEC (Feature Entropy Component) = "How spread out/uncertain are the features?"
+* FCC (Feature Confidence Component) = "How confident is the model's feature representation?"
+
 
 
 
