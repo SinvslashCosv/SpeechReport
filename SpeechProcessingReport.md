@@ -347,12 +347,6 @@ So, transliteration schemes offer a **standardized mapping**.
 NOTE: Unicode is a universal system that gives every character in every writing system unique numerical code so computers can store, process, and display code correctly.
 
 #### Transliteration Tables
-
-|Language| Script| Native Script| IAST| ISO 15919| ITRANS| Harvard-Kyoto| WX| Informal Romanization|
-|----|----|----|----|----|----|----|----|----|
-|Hindi|Devanagari|कृष्ण|Kṛṣṇa|Kṛṣṇa|kR^iShNa|kRSNa|kqRNa|Krishna / Krishn|
-|Telugu|Telugu|కృష్ణ|Kṛṣṇa|Kṛṣṇa|kR^iShNa|kRSNa|kqRNa|Krishna / Krushna|
-
 ##### Vowels
 | Hindi | Telugu | Unicode (Hindi) | Unicode (Telugu) | IAST | ISO 15919 | ITRANS | HK | WX |
 | ----- | ------ | --------------- | ---------------- | ---- | --------- | ------ | -- | -- |
