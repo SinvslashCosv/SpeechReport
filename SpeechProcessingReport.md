@@ -182,7 +182,7 @@ Transfer of knowledge can occur more easily between languages of the same langua
 * Written right to left.
 * Used mainly for administrative records and Buddhist texts.
   
-3. **Brahmi Script (~3rd Century BCE – 6th Century CE)**
+1. **Brahmi Script (~3rd Century BCE – 6th Century CE)**
 ![alt text](image-5.png)
 
 * Most influential Indian script and ancestor of most modern Indic scripts.
@@ -1012,8 +1012,25 @@ FESTA Score = FEC + FCC
 * FEC (Feature Entropy Component) = "How spread out/uncertain are the features?"
 * FCC (Feature Confidence Component) = "How confident is the model's feature representation?"
 
+## Benchmarking in LLMs
+* Involves systematically comparing an LLM's performance on standardized tasks/datasets
+* Helps compare models, identify strengths/weaknesses, and track progress
 
+### Desirable Characteristics of a Benchmark
+1. **Representative**: Covers diverse real-world tasks and users
+2. **Challenging**: Should test advanced capabilities, not simple memorization
+3. **Reliable**: Results should be consistent across repeated evaluations
+4. **Valid**: Should actually measure the ability it claims to test
+5. **Diverse**: Should include different domains, languages, difficulty levels, reasoning types
+6. **Resistant to Contamination**: Avoid questions to may have already appeared in training data
 
+### Test Items
+Individual examples/questions used for evaluation
+
+A test item typically contains:
+* Input/Prompt: Question/task given to the model
+* Expected output/reference: Correct answer/ideal response
+* Metadata: Category, difficulty, language, domain etc.
 
 
 
